@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+% Packages
+\input{packages}
+
+% Bibliography
+\bibliographystyle{unsrtnat}
+
+% Graphics
+\graphicspath{{./figs/}}
+
+% Metadata
+\title{Assignment}
+\author{Author Name}
+\date{\today}
+
+% Header
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\rhead{uib name}
+\chead{University of Bergen}
+\lhead{\theauthor}
+% \lfoot{Important footer info}
+
+\includeonly{sections/section-one.tex, sections/section-two.tex}
+
+% Document
+\begin{document}
+    \begin{titlepage}
+        \centering
+
+        \line(1,0){350} \\
+        \Huge{\textbf{\thetitle}}
+        \line(1,0){350}
+
+        \vspace{0.5cm}
+        [Subject code]
+
+        \vspace{1.5cm}
+
+        \Large{\textbf{\theauthor}}
+
+        \vfill
+        \vspace{0.8cm}
+
+        \includegraphics[width=0.3\textwidth]{uib-logo.png}
+
+        Department of Informatics\\
+        University of Bergen\\
+        \thedate
+    \end{titlepage}
+
+    \tableofcontents
+
+    \newpage
+
+    \include{sections/section-one.tex}
+    \include{sections/section-two.tex}
+
+    \newpage
+
+    \bibliography{refs}
+
+\end{document}
