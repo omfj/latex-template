@@ -4,7 +4,7 @@
 \input{packages}
 
 % Bibliography
-\bibliographystyle{unsrtnat}
+\bibliographystyle{unsrt}
 
 % Graphics
 \graphicspath{{./figs/}}
@@ -57,8 +57,9 @@
     \include{sections/section-one.tex}
     \include{sections/section-two.tex}
 
-    \newpage
 
     \bibliography{refs}
+    \nocite{textbook1}
+    \nocite{textbook2}
 
 \end{document}
