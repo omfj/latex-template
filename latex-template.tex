@@ -10,17 +10,21 @@
 \graphicspath{{./figs/}}
 
 % Metadata
-\title{Assignment}
-\author{Author Name}
+\title{[Assignment]}
+\author{Ole Magnus Fon Johnsen}
 \date{\today}
 
 % Header
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
-\rhead{uib name}
-\chead{University of Bergen}
+
 \lhead{\theauthor}
-%\lfoot{Important footer info}
+\chead{University of Bergen}
+\rhead{ojo033}
+
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{}
 
 \includeonly{sections/section-one.tex, sections/section-two.tex}
 
@@ -52,13 +56,10 @@
 
     \tableofcontents
 
-    \newpage
-
     \include{sections/section-one.tex}
     \include{sections/section-two.tex}
 
-    \nocite{textbook1}
-    \nocite{textbook2}
+    \nocite{*}
     \bibliography{refs}
 
 \end{document}
