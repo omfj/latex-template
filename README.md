@@ -6,7 +6,7 @@ This repo contains the boilerplate for creating a new LaTeX document.
 
 I use VSCode with [Latex Workshop made by James Yu](https://github.com/James-Yu/LaTeX-Workshop).
 
-The settings I use is:
+The settings I use are:
 
 ```json
 {
