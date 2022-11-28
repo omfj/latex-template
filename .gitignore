@@ -1,3 +1,4 @@
+# compiler aux
 *.aux
 *.log
 *.synctex.gz
@@ -6,3 +7,7 @@
 *.blg
 *.bcf
 *.run.xml
+
+# misc
+.DS_Store
+.localized
